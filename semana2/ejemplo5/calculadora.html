@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Calculadora básica</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<label>Número 1</label> 
+	<input type="text" name="" id="num1">
+	<br>
+	<label>Número 2</label>
+	<input type="number" name="" id="num2">
+	<br>
+	<button id="suma">Sumar</button>
+	<button id="resta">Restar</button>
+	<button id="multiplica">Multiplicar</button>
+	<button id="divide">Dividir</button>
+
+	<div id="resultado">El resultado se verá aquí ... </div>
+
+	<!-- CDN de Jquery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Aquí podemos escribir el código de Jquery -->
+	<script>
+		$(document).ready(function(){
+			//sumar:
+			$('#suma').click(function(){
+				var n1 = parseFloat($('#num1').val());
+				var n2 = parseFloat($('#num2').val());
+				$('#resultado').text('La suma de '+n1+' y '+n2+' es '+(n1+n2));
+			});
+			//restar:
+			$('#resta').click(function(){
+				var n1 = parseFloat($('#num1').val());
+				var n2 = parseFloat($('#num2').val());
+				$('#resultado').text('La resta de '+n1+' y '+n2+' es '+(n1-n2));
+			});
+		});
+	</script>
+</body>
+</html>

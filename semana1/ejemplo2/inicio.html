@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Utilizar Jquery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<h1>Mensaje original</h1>
+	<p class="fondo-naranja">Texto en fondo naranja</p>
+	<p id="un-numero">El número es <span>5</span></p>
+	<img src="img/tienda.jpg" alt="Tienda en línea" id="mi-imagen">
+	<a href="https://www.google.com.pe/" target="_blank" id="un-link">Ir a google</a>
+	<!-- CDN de Jquery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Aquí podemos escribir el código de Jquery -->
+	<script>
+		$(document).ready(function(){
+			//Reemplazar el texto original de h1:
+			$('h1').html('Otro mensaje'); 
+			//Ocultar el párrafo que tiene la class fondo-naranja:
+			$('.fondo-naranja').hide(5000);
+			//Cambiar el ancho a la imagen que tiene id mi-imagen:
+			$('#mi-imagen').width('450px');
+			//Obtener el contenido de id un-numero:
+			var contenido = $('#un-numero').html();
+			console.log(contenido);
+			//Obtener el texto de id un-numero:
+			var soloTexto = $('#un-numero').text();
+			console.log(soloTexto);
+			//Obtener tamaño de texto de h1
+			console.log('El tamaño del texto de h1 es '+$('h1').css('font-size'));
+			//Asigna el tamaño de texto de 25px a la etiqueta span
+			$('span').css('font-size','25px');  
+			//$('span').css({'font-size':'25px','color':'red'});
+			// Quita la clase fondo-naranja en las etiquetas p 
+			//$('p').removeClass('fondo-naranja');
+			//Agregar la clase un-borde a el id mi-imagen
+			$('#mi-imagen').addClass('un-borde');
+			//$('#mi-imagen').toggleClass('un-borde');
+			//attr
+			var linkGoogle = $('#un-link').attr('href'); // Obtiene el enlace de #un-link
+			console.log(linkGoogle);
+			var linkOtro = $('#un-link').attr('href','http://jquery.com/'); // Reemplaza el enlace de #un-link
+			console.log(linkOtro);
+			//$('#un-link').removeAttr('href'); // Elimina el href
+			//Eliminar elementos con remove y detach
+			//$('h1').remove(); //Elimina el h1
+			//$('p').detach();
+		});
+	</script>
+</body>
+</html>

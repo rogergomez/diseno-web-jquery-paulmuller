@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Activar con botón click</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<h1>Trabajando con Click</h1>
+	<li>Ocultar título</li>
+	<hr>
+	<button id="miBoton">Cambiar texto del Párrafo:</button>
+	<p id="parrafo1">Este es un texto</p>
+	<hr>
+	<button id="miBoton2">Mostrar y ocultar</button>
+	<p id="parrafo2">Este es un texto de otro párrafo</p>
+	<hr>
+	<button id="miBoton3">Agregar y quitar una clase</button><br>
+	<img src="img/jquery.png" id="foto">
+	<!-- CDN de Jquery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Aquí podemos escribir el código de Jquery -->
+	<script>
+		$(document).ready(function(){
+			$('#miBoton').click(function(){
+				$('#parrafo1').text('Cambiamos el párrafo');
+			});
+
+			$('#miBoton2').click(function(){
+				$('#parrafo2').toggle();
+			});
+
+			$('#miBoton3').click(function(){
+				$('#foto').toggleClass('mi-imagen');
+			})
+
+			$('li').click(function(){
+				$('h1').hide();
+			})
+		});
+	</script>
+</body>
+</html>

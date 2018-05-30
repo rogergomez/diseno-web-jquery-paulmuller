@@ -1,0 +1,11 @@
+.fondo-naranja{
+	background: orange;
+	padding: 40px;
+}
+#mi-imagen{
+	//height: 450px;
+}
+
+.un-borde{
+	border: solid 2px orange;
+}

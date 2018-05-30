@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Lista de nombres</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<label>Ingrese nombre: </label>
+	<input type="text" name="nombre" id="unNombre" placeholder="Escribir aquí">
+	<button>Aceptar</button>
+
+	<h3>Bienvenidos</h3>
+	<div></div>
+	<!-- CDN de Jquery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Aquí podemos escribir el código de Jquery -->
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				var nombre = $('#unNombre').val();
+				$('div').append(nombre+'<br>');
+			});
+		});
+	</script>
+</body>
+</html>
