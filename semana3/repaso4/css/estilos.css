@@ -1,0 +1,27 @@
+div{
+	background-color: orange;
+	float:left;
+	height: 250px;
+	text-align: center;
+	width: 250px;
+}
+
+.div-uno{
+	background-color: blue;
+	color: #fff;
+}
+
+.div-dos{
+	
+}
+
+.div-tres{
+	background-color: green;
+}
+
+.div-cuatro{
+	background-image: url('../img/foto-blanco-y-negro.jpg');
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
