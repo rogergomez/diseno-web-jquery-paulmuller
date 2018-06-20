@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Efectos Jquery</title>
+  <meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+
+      //hide: slow, fast, números - Oculta el elemento seleccionado.
+      $('.btn1').click(function(){
+        $('.la-foto').hide('slow');
+      });
+
+      //show: slow, fast, números - Muestra el elemento seleccionado.
+      $('.btn2').click(function(){
+        $('.la-foto').show('fast');
+      });
+
+      //fadeIn: slow, fast, números - De forma animada, cambia la opacidad del elemento seleccionado al 100%.
+      $('.btn3').click(function(){
+        $('.la-foto').fadeIn(5000);
+      });
+
+      //fadeOut: slow, fast, números - De forma animada, cambia la opacidad del elemento seleccionado al 0
+      $('.btn4').click(function(){
+        $('.la-foto').fadeOut(6000);
+      });
+
+      //fadeToggle: slow, fast, números
+      $('.btn5').click(function(){
+        $('.la-foto').fadeToggle();
+      });
+
+      //slideDown: slow, fast, números - Muestra el elemento seleccionado con un movimiento de deslizamiento vertical.
+      $('.btn6').click(function(){
+        $('.la-foto').slideDown();
+      });
+
+      //slideUp: slow, fast, números - Oculta el elemento seleccionado con un movimiento de deslizamiento vertical.
+      $('.btn7').click(function(){
+        $('.la-foto').slideUp();
+      });
+
+      //slideToggle: slow, fast, números - Muestra o oculta el elemento seleccionado con un movimiento de deslizamiento vertical, dependiendo si actualmente el elemento está visible o no.
+      $('.btn8').click(function(){
+        $('.la-foto').slideToggle();
+      });
+
+
+  	});
+  </script>
+</head>
+<body>
+	<h3>Efectos con Jquery</h3>
+	<button class="btn1">Hide</button> 
+  <button class="btn2">Show</button> 
+  <button class="btn3">fadeIn</button>
+  <button class="btn4">fadeOut</button>
+  <button class="btn5">fadeToggle</button>
+  <button class="btn6">slideDown</button>
+  <button class="btn7">slideUp</button>
+  <button class="btn8">slideToggle</button>
+  <hr>
+	<img src="foto1.png" class="la-foto">
+</body>
+</html>

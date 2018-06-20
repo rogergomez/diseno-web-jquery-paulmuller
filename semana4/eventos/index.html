@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos Jquery</title>
+  <meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+
+      //toggle simple:
+      $('#btn1').click(function(){
+        $('#la-foto').toggle();
+      });
+
+      //toggle animado:
+      $('#btn2').click(function(){
+        $('#la-foto').animate({
+          height : 'toggle'
+        });
+      });
+
+      //hover:
+      $('span').hover(function(){
+        $(this).css('background-color',"yellow");
+      }, function(){
+        $(this).css('background-color',"pink");
+      });
+
+  	});
+  </script>
+</head>
+<body>
+	<h3>Eventos con Jquery - <span>Pon el mouse aquí</span></h3>
+	<button id="btn1">Toggle</button> <button id="btn2">Toggle animate</button> <button id="btn3">Hover</button>
+  <hr>
+	<img src="foto1.png" id="la-foto">
+</body>
+</html>
