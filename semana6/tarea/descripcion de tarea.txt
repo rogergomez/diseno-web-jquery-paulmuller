@@ -1,0 +1,10 @@
+en el sitio web de bbva continental, al hacer click en
+"Banca por internet" se despliega un formulario, se puede 
+seleccionar documento, ingresar número y contraseña. 
+
+Al ingresar el "Número de documento", el sistema reconoce 
+numeros y al ingresar los 8 números del DNI automaticamente el
+cursor pasa a la caja de contraseña. 
+
+TAREA: elaborar un formulario similar, al ingresar una 
+cantidad de 6 números el cursor pase automaticamente al otro campo.
