@@ -1,0 +1,5 @@
+Con Ajax, se hace posible realizar peticiones al servidor y 
+obtener respuesta de este en segundo plano (sin necesidad de 
+recargar la pagina web completa) y usar esos datos para, a 
+traves de JavaScript, modificar los contenidos de la pagina 
+creando efectos dinamicos y rapidos.

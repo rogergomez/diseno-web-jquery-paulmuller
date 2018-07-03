@@ -1,0 +1,28 @@
+EL PROYECTO FINAL DEL CURSO CONSISTE EN ELABORAR
+UN SITIO WEB CON HTML5, CSS3 Y JQUERY.
+
+DEBE CUMPLIR CON:
+- Ser responsive design
+- No mostrar errores en consola
+- Proyecto organizado correctamente en carpetas
+- No trabajar con CDN
+
+DEBE TENER UNA ESTRUCTURA MÍNIMA DE:
+- 2 Secciones (ejemplo: inicio y contacto)
+- Menú de navegación
+- Slider con imágenes 
+- Servicios o productos con fotos
+- Formulario
+- Footer 
+
+DEBE CONTENER JQUERY CON:
+- Botón para Scroll Top
+- Validar formulario 
+- Tabs animados 
+- Modal 
+- Efectos y animaciones (mínimo 5)  
+
+EVALUACIÓN DEL PROYECTO:
+- Se expone el proyecto y muestra su funcionalidad (10 minutos)
+- Ronda de preguntas (5 minutos)
+- La nota es igual para todos los integrantes del grupo
